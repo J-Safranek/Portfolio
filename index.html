@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jan Šafránek – Portfolio</title>
+<meta name="description" content="Portfolio Jana Nováka – projekty, certifikáty a kontakt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Hlavní navigace">
+      <a class="logo" href="#top">JŠ</a>
+      <ul>
+        <li><a href="#o-mne">O mně</a></li>
+        <li><a href="#projekty">Projekty</a></li>
+        <li><a href="#certifikaty">Certifikáty</a></li>
+        <li><a href="#kontakt">Kontakty</a></li>
+      </ul>
+      <button id="theme" aria-label="Přepnout světlý a tmavý režim">◐</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <p class="hello">Ahoj, jsem</p>
+    <h1><span>Jan</span> Šafránek</h1>
+    <p class="role">Junior webový vývojář a programátor</p>
+    <p class="lead">Stavím weby a aplikace, které jsou přehledné, rychlé a dobře vypadají. Rád se učím nové technologie a dotahuju věci do detailu.</p>
+  </div>
+
+  <section id="o-mne">
+    <div class="wrap about">
+      <div>
+        <h2>O mně</h2>
+        <p>Studuji informatiku a věnuji se hlavně webovému vývoji. Baví mě propojovat design s funkčním kódem a hledat jednoduchá řešení složitých problémů.</p>
+        <p>Mimo kód mě najdeš u sportu, hudby nebo při čtení o nových technologiích. Hledám praxi nebo spolupráci na zajímavých projektech.</p>
+      </div>
+      <div class="facts">
+        <h3>Technologie</h3>
+        <ul class="chips">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Základy Pythonu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projekty">
+    <div class="wrap">
+      <h2>Projekty</h2>
+      <p class="sub">Výběr toho, na čem jsem pracoval. U každého projektu najdeš odkaz na kód i ukázku.</p>
+      <div class="filters" role="group" aria-label="Filtr projektů">
+        <button aria-pressed="true" data-filter="all">Vše</button>
+        <button aria-pressed="false" data-filter="web">Weby</button>
+        <button aria-pressed="false" data-filter="app">Aplikace</button>
+        <button aria-pressed="false" data-filter="skola">Školní</button>
+      </div>
+      <div class="grid">
+        <article class="project" data-cat="web skola">
+          <h3>Redline Track Days</h3>
+          <p>Web půjčovny sportovních aut na okruhu. Čisté HTML a CSS bez frameworků, responzivní layout.</p>
+          <ul class="chips"><li>HTML</li><li>CSS</li></ul>
+          <div class="row"><a href="https://github.com/tvoje-jmeno/redline" target="_blank" rel="noopener">Kód na GitHubu</a><a href="#" target="_blank" rel="noopener">Ukázka</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifikaty">
+    <div class="wrap">
+      <h2>Certifikáty</h2>
+      <p class="sub">Kurzy a osvědčení, která jsem získal.</p>
+      <ul class="certs">
+  <li class="cert"><strong>ECDL M2</strong><small>Vydáno 11/2025</small></li>
+  <li class="cert"><strong>ECDL M3</strong><small>Vydáno 12/2025</small></li>
+  <li class="cert"><strong>ECDL M4</strong><small>Vydáno 1/2026</small></li>
+  <li class="cert"><strong>ECDL M7</strong><small>Vydáno 3/2026</small></li>
+  <li class="cert"><strong>ECDL M6</strong><small>Vydáno 4/2026</small></li>
+  <li class="cert"><strong>ECDL M5</strong><small>Vydáno 5/2026</small></li>
+</ul>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="wrap contact">
+      <h2>Kontakt</h2>
+      <p class="sub">Máš nápad, nabídku praxe nebo se chceš zeptat na nějaký z projektů? Napiš mi.</p>
+      <a class="mail" href="mailto:jansafr8@seznam.cz">jansafr8@seznam.cz</a>
+      <div class="links" style="margin-top:0">
+        <a class="btn" href="https://github.com/tvoje-jmeno" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/tvoje-jmeno" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Jan Šafránek</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
